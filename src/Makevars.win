@@ -4,7 +4,7 @@ PKG_CPPFLAGS = -I"../inst/include" -I"$(STANHEADERS_SRC)" -I"$(BOOST_NOT_IN_BH_S
 
 CXX_STD = CXX11
 SOURCES = $(wildcard stan_files/*.stan)
-OBJECTS = $(SOURCES:.stan=.o)
+OBJECTS = $(SOURCES:.stan=.o) RcppExports.o
 
 all: $(SHLIB)
 
