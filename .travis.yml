@@ -20,7 +20,7 @@ matrix:
           - sourceline: 'ubuntu-toolchain-r-test'
           - sourceline: 'llvm-toolchain-precise-5.0'
           packages:
-            - llvm-5.0-dev
+          - llvm-5.0-dev
       env:
         - CXX_OLEVEL=2 CXX=clang++
 
